@@ -8,7 +8,7 @@
     "doc": "typedoc",
     "test": "mocha",
     "nyc": "nyc npm test",
-    "coverage": "nyc npm test && nyc report --reporter=text-lcov | coveralls && rm -rf .nyc_output"
+    "coverage": "nyc npm test && nyc report --reporter=lcov"
   },
   "repository": {
     "type": "git",
@@ -28,7 +28,6 @@
     "@typescript-eslint/eslint-plugin": "^5.51.0",
     "@typescript-eslint/parser": "^5.51.0",
     "chai": "^4.3.7",
-    "coveralls": "^3.1.1",
     "eslint": "^8.33.0",
     "eslint-config-prettier": "^8.6.0",
     "mocha": "^10.2.0",
