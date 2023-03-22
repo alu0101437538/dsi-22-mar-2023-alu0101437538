@@ -1,11 +1,11 @@
 import { PokemonCreator } from "./PokemonCreator";
-import { FirePokemon } from "./FirePokemon";
+import { GrassPokemon } from "./GrassPokemon";
 import { Pokemon } from "./Pokemon";
 
 /**
- * Clase que representa la fábrica de pokemon tipo fuego
+ * Clase que representa la fábrica de pokemon tipo planta
  */
-export class FirePokemonCreator extends PokemonCreator {
+export class GrassPokemonCreator extends PokemonCreator {
 
     /**
      * Constructor de la fabrica
@@ -22,6 +22,6 @@ export class FirePokemonCreator extends PokemonCreator {
      * @returns Devuelve el pokemon definido 
      */
     factoryMethod(): Pokemon {
-        return new FirePokemon(this._name, this._ability, this._stats)
+        return new GrassPokemon(this._name, this._ability, this._stats)
     }
 }
