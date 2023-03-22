@@ -9,3 +9,5 @@ docs
 README.md
 typedoc.json
 .mocharc.json
+coverage
+.git

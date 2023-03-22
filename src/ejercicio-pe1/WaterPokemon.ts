@@ -1,17 +1,19 @@
 import { Pokemon, PokemonType } from "./Pokemon";
 
 export class WaterPokemon implements Pokemon {
-  private readonly _type: PokemonType = "Agua"
-    
+  private readonly _type: PokemonType = "Agua";
+
   /**
    * Constructor del pokemon
    * @param _name Nombre del pokemon
    * @param _ability Habilidad principal del pokemon
    * @param _stats EStadísticas actuales del pokemon
    */
-  constructor (private _name: string, private _ability: string, private _stats: number[]) {
-
-  }
+  constructor(
+    private _name: string,
+    private _ability: string,
+    private _stats: number[]
+  ) {}
 
   /**
    * Getter del nombre
@@ -45,8 +47,10 @@ export class WaterPokemon implements Pokemon {
    * Getter de la suma total de stats
    */
   getTotalStats() {
-    const total = this._stats.reduce(function(a, b){ return a + b; });
-    return total
+    const total = this._stats.reduce(function (a, b) {
+      return a + b;
+    });
+    return total;
   }
 
   /**
@@ -69,5 +73,4 @@ export class WaterPokemon implements Pokemon {
   setStats(stats: number[]) {
     this._stats = stats;
   }
-
 }
